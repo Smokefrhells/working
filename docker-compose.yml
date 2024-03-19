@@ -5,6 +5,25 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    volumes:
+      - "./src:/var/www/html"
+    ports:
+      - "80:80"
 
   pma:
     image: phpmyadmin:latest
+    environment:
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"
+
+  mysql:
+    image: mysql:8.0
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD:        '${MYSQL_ROOT_PASSWORD}'
+      MYSQL_ALLOW_EMPTY_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+      MYSQL_ROOT_HOST:            "%"
+      MYSQL_DATABASE:             '${MYSQL_DATABASE}'
+      MYSQL_USER:                 '${MYSQL_USER}'
+      MYSQL_PASSWORD:             '${MYSQL_PASSWORD}'

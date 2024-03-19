@@ -5,7 +5,7 @@ $set['site'] = htmlspecialchars($_SERVER['HTTP_HOST']);
 define("H", $_SERVER["DOCUMENT_ROOT"] . '/');
 mb_internal_encoding("UTF-8");
 #-Подключение базы данных-#
-$pdo = new PDO('mysql:host=localhost;dbname=tem654_warsking', 'tem654_warsking', '9C9h2Y8i', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8"));
+$pdo = new PDO('mysql:host=mysql;dbname=test', 'user', 'password', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8"));
 #-Загрузка функций-#
 require_once H . 'system/function.php';
 #-Cookie персонажа-#
