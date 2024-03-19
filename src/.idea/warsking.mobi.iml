@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/donat/xsolla1/src" isTestSource="false" packagePrefix="Xsolla\SDK\" />
+      <sourceFolder url="file://$MODULE_DIR$/donat/xsolla1/tests" isTestSource="true" packagePrefix="Xsolla\SDK\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/pass/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/warsking.mobi/donat/xsolla1/src" isTestSource="false" packagePrefix="Xsolla\SDK\" />
+      <sourceFolder url="file://$MODULE_DIR$/warsking.mobi/donat/xsolla1/tests" isTestSource="true" packagePrefix="Xsolla\SDK\Tests\" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
