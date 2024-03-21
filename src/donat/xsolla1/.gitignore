@@ -1,4 +1,0 @@
-vendor
-build/artifacts
-phpunit.xml
-composer.lock
